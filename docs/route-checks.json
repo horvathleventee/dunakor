@@ -1,0 +1,96 @@
+{
+  "testedAt": "2026-10-21T18:01:01.601Z",
+  "base": "http://127.0.0.1:3001",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Dunakor — Ipari megoldások. Biztos alapokon."
+    },
+    {
+      "route": "/cegunkrol",
+      "status": 200,
+      "title": "Cégünkről | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok",
+      "status": 200,
+      "title": "Ipari szolgáltatások | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/felulettisztitas",
+      "status": 200,
+      "title": "Felülettisztítás | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/ipari-festes",
+      "status": 200,
+      "title": "Ipari festés | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/betonvedelem",
+      "status": 200,
+      "title": "Betonvédelem | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/ipari-padlo",
+      "status": 200,
+      "title": "Ipari padlók | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/alpin-technologia",
+      "status": 200,
+      "title": "Alpin technológia | Dunakor · Bemutató"
+    },
+    {
+      "route": "/szolgaltatasok/epitoipari-kivitelezes",
+      "status": 200,
+      "title": "Építőipari kivitelezés | Dunakor · Bemutató"
+    },
+    {
+      "route": "/geppark",
+      "status": 200,
+      "title": "Géppark és technológiák | Dunakor · Bemutató"
+    },
+    {
+      "route": "/referenciak",
+      "status": 200,
+      "title": "Archív képgaléria és referenciák | Dunakor · Bemutató"
+    },
+    {
+      "route": "/videok",
+      "status": 200,
+      "title": "Technológiai videók | Dunakor · Bemutató"
+    },
+    {
+      "route": "/palyazatok",
+      "status": 200,
+      "title": "Pályázatok és fejlesztések | Dunakor · Bemutató"
+    },
+    {
+      "route": "/kapcsolat",
+      "status": 200,
+      "title": "Kapcsolat és ajánlatkérés | Dunakor · Bemutató"
+    },
+    {
+      "route": "/bemutato",
+      "status": 200,
+      "title": "A bemutatóról és a forrásokról | Dunakor · Bemutató"
+    },
+    {
+      "route": "/adatkezeles",
+      "status": 200,
+      "title": "Adatkezelés a bemutatóban | Dunakor · Bemutató"
+    },
+    {
+      "route": "/impresszum",
+      "status": 200,
+      "title": "Impresszum — bemutató | Dunakor · Bemutató"
+    }
+  ],
+  "internalLinks": 28,
+  "optimizedImages": 28,
+  "redirects": 4,
+  "notFound": 404,
+  "robots": "noindex/disallow"
+}
