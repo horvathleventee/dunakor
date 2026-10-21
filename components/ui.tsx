@@ -1,0 +1,12 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { services } from '@/lib/content';
+
+export function Photo({file,alt,className='',priority=false}:{file:string;alt:string;className?:string;priority?:boolean}){return <div className={`photo ${className}`}><Image src={`/images/${file}`} alt={alt} fill sizes="(max-width: 700px) 100vw, (max-width: 1100px) 70vw, 55vw" priority={priority} quality={80}/></div>}
+export function Button({href,children,secondary=false}:{href:string;children:React.ReactNode;secondary?:boolean}){return <Link href={href} className={`button ${secondary?'secondary':''}`}>{children}<ArrowUpRight size={18} aria-hidden="true"/></Link>}
+export function Label({children,light=false}:{children:React.ReactNode;light?:boolean}){return <div className={`eyebrow ${light?'light':''}`}><span/>{children}</div>}
+export function SectionTitle({label,title,children,href,linkText='További részletek'}:{label:string;title:string;children?:React.ReactNode;href?:string;linkText?:string}){return <div className="section-heading"><div><Label>{label}</Label><h2>{title}</h2></div><div className="section-heading-side">{children&&<p>{children}</p>}{href&&<Link className="text-link" href={href}>{linkText}<ArrowUpRight size={18}/></Link>}</div></div>}
+export function PageIntro({label,title,description}:{label:string;title:string;description:string}){return <section className="page-intro wrap"><nav className="breadcrumbs" aria-label="Morzsamenü"><Link href="/">Kezdőlap</Link><ArrowRight size={12}/><span>{label}</span></nav><Label>{label}</Label><h1>{title}</h1><p>{description}</p></section>}
+export function ServicesGrid({heading="h3"}:{heading?:"h2"|"h3"}){const Heading=heading;return <div className="service-grid">{services.map((s,i)=><Link href={`/szolgaltatasok/${s.slug}`} key={s.slug} className={`service-card service-${i}`}><Photo file={s.image} alt={s.alt}/><div className="service-card-content"><span className="mono">0{i+1} / SZOLGÁLTATÁS</span><Heading>{s.title}</Heading><p>{s.short}</p><span className="circle-arrow"><ArrowUpRight size={22}/></span></div></Link>)}</div>}
+export function CTA(){return <section className="cta-band"><div className="wrap cta-inner"><div><Label light>Beszéljünk a feladatról</Label><h2>Összetett ipari feladat?<br/><span>Biztos alapokkal indul.</span></h2></div><Button href="/kapcsolat">Kapcsolatfelvétel</Button></div></section>}

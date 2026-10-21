@@ -1,0 +1,4 @@
+import {PageIntro,CTA} from '@/components/ui';
+import {ProjectGallery} from '@/components/catalog';
+export const metadata={title:'Archív képgaléria és referenciák',description:'Eredeti Dunakor honlapfotók, szakterület szerint böngészhető galériában. A projektek részletes adatai egyeztetésre várnak.',alternates:{canonical:'/referenciak'}};
+export default function Page(){return <><PageIntro label="Referenciák" title="A feladatok mögött. A felületek közelében." description="Válogatás a Dunakor korábbi honlapjának képeiből, szakterületek szerint rendezve."/><section className="wrap content-section"><div className="notice">Archív honlapfotók. A részletes referenciaoldalak nem voltak elérhetők; a projektnevek, helyszínek, dátumok és megrendelők nem ellenőrizhetők. A képaláírások szakterületet jelölnek, nem igazolt esettanulmányt.</div><ProjectGallery/></section><CTA/></>}
